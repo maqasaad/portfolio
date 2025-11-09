@@ -1,0 +1,276 @@
+:root {
+  --maru-text: #A3A3A3;
+  --maru-text-rgb: 163, 163, 163;
+  --maru-gray2: #777777;
+  --maru-gray2-rgb: 119. 119. 119;
+  --maru-white: #23232D;
+  --maru-white-rgb: 35, 35, 45;
+  --maru-black: #FFFFFF;
+  --maru-black-rgb: 255, 255, 255;
+  --maru-black4: #181823;
+  --maru-black4-rgb: 24, 24, 35;
+}
+
+body,
+.preloader,
+.main-header--one .main-menu .main-menu__list li ul li.current > a,
+.main-header--one .main-menu .main-menu__list li ul li:hover > a,
+.main-menu .main-menu__list li ul li.current > a,
+.main-menu .main-menu__list li ul li:hover > a,
+.mobile-nav__content,
+.hero-one,
+.services-one__card__btn::after,
+.contact-btn:hover::after,
+.testimonials-one,
+.follow-one::after,
+.follow-one__social__list a::after,
+.moments-one__image__icon::after,
+.moments-one__image__icon::before,
+.moments-one__image__hover .img-popup:hover,
+.projects-two__image__icon::before,
+.projects-two__image__icon::after,
+.projects-two__image__btn:hover {
+  background-color: var(--maru-white);
+}
+
+.mobile-nav__content .main-menu__list li a button.expanded,
+.hero-one .maru-btn--border,
+.services-one__image__shape,
+.projects-one__card__btn::after,
+.footer-widget__newsletter button[type=submit]:hover,
+.video__btn,
+.instagram-two__btn::after,
+.projects-four__image__overlay::before,
+.projects-four__image__overlay::after,
+.blog-card-two__image__link::before,
+.blog-card-two__image__link::after,
+.moments-one__image__hover .img-popup,
+.moments-one__image__hover .img-popup:hover .moments-one__image__icon::after,
+.moments-one__image__hover .img-popup:hover .moments-one__image__icon::before,
+.projects-two__image__btn,
+.projects-two__image__btn:hover .projects-two__image__icon::before,
+.projects-two__image__btn:hover .projects-two__image__icon::after {
+  background-color: var(--maru-black);
+}
+
+.client-brands--two {
+  background-color: var(--maru-white) !important;
+}
+
+.testimonials-one__bg::after,
+.client-brands,
+.contact-two::after {
+  background-color: rgba(var(--maru-black-rgb), 0.02);
+}
+
+.scroll-top,
+.testimonials-one__carousel.owl-carousel .owl-nav button,
+.contact-two .contact-btn:hover,
+.contact-two .contact-btn__link,
+.testimonials-one--home4 .testimonial-card,
+.page-header,
+.sidebar__item,
+.blog-details__tags__btn,
+.testimonial-card-two,
+.testimonials-one--dark .testimonial-card,
+.contact-page__info__list,
+.contact-page__form {
+  background-color: var(--maru-black4);
+}
+
+.contact-two .contact-btn::after {
+  background-color: rgba(var(--maru-black4-rgb), 0.1);
+}
+
+.demo-one__btns,
+.blog-card-two__image__link {
+  background-color: rgba(var(--maru-black4-rgb), 0.6);
+}
+
+.instagram-one__image__overlay,
+.instagram-two__image__overlay,
+.demo-one__btns {
+  background-color: rgba(var(--maru-black4-rgb), 0.7);
+}
+
+.main-menu .main-menu__list li ul,
+.hero-one .maru-btn--border::before,
+.hero-one .maru-btn--border::after,
+.contact-two__inner,
+.contact-two .contact-btn,
+.footer-widget__newsletter button[type=submit] {
+  background-color: var(--maru-base);
+}
+
+.main-header--one .main-header__btn::before,
+.main-header--one .main-header__btn::after {
+  background-color: var(--maru-primary);
+}
+
+.main-footer-two__scroll-top__btn {
+  background-color: transparent;
+  border: 1px solid;
+}
+
+.projects-one__card__content {
+  background: linear-gradient(180deg, rgba(var(--maru-white-rgb), 0.5) -11.23%, var(--maru-white) 97.14%);
+}
+
+.description-one__btn::after {
+  background-image: url(../images/shapes/description-btn-border-1-1-dark.png);
+}
+
+.projects-three__btn::after {
+  background-image: url(../images/shapes/projects-btn-border-3-1-dark.png);
+}
+
+.maru-owl__carousel--basic-nav.owl-carousel .owl-nav button:hover,
+.maru-btn,
+.main-menu .main-menu__list li ul li > a,
+.mobile-nav__content .main-menu__list li a button,
+.mobile-nav__content .main-menu__list li a button.expanded,
+.mobile-nav__contact__icon,
+.hero-one .maru-btn:hover,
+.slide-text--home1 .slide-text__title,
+.slide-text--home1 .slide-text__title__icon,
+.services-one__card:hover .services-one__card__icon,
+.services-one__card:hover .services-one__card__title,
+.services-one__card:hover .services-one__card__text,
+.contact-btn:hover .contact-btn__text,
+.projects-one__card__btn,
+.projects-one__card__btn:hover,
+.projects-one__btn:hover,
+.blog-card__category:hover,
+.blog-card__btn:hover,
+.footer-widget__scroll-up:hover .footer-widget__scroll-up__icon,
+.footer-widget__newsletter button[type=submit]:hover,
+.hero-two__experience__text,
+.follow-one__title,
+.follow-one__text,
+.follow-one__social__title__icon,
+.follow-one__social__list a,
+.expertise-one__meta li:hover,
+.instagram-one__link:hover,
+.instagram-two__btn,
+.slide-text--home4 .slide-text__title,
+.slide-text--home4 .slide-text__title__icon,
+.contact-two--home4 .sec-title__title,
+.contact-two--home4 .contact-two__text,
+.contact-two--home4 .contact-btn__text,
+.main-footer-two__scroll-top__btn:hover .main-footer-two__scroll-top__icon,
+.main-footer-two__social__item:hover .main-footer-two__social__title,
+.main-footer-two__social__link:hover,
+.post-pagination a:hover,
+.post-pagination a:hover .post-pagination__icon,
+.post-pagination li.active a .post-pagination__icon,
+.sidebar__social a:hover .sidebar__social__icon,
+.blog-details__tags__btn:hover,
+.testimonial-card-two__social__icon {
+  color: var(--maru-white);
+}
+
+.main-header--one .main-header__btn:hover,
+.mobile-nav__content .main-menu__list li > a,
+.main-header--one .main-menu .main-menu__list li ul li.current > a,
+.main-header--one .main-menu .main-menu__list li ul li:hover > a,
+.main-header--one .main-menu .main-menu__list li ul li > a::after,
+.mobile-nav__contact li,
+.mobile-nav__close,
+.mobile-nav__social a,
+.hero-one__title__text span,
+.hero-one__social a,
+.contact-btn:hover .contact-btn__link,
+.projects-one__card__title,
+.testimonials-one__carousel.owl-carousel .owl-nav button,
+.follow-one__social__list a:hover,
+.hero-four__btn-2,
+.contact-two--home4 .contact-btn__link,
+.contact-two--home4 .contact-btn:hover .contact-btn__text,
+.main-footer-two__scroll-top__icon,
+.maru-breadcrumb li,
+.blog-details__tags__btn,
+.video__btn:hover,
+.instagram-one__image__link:hover,
+.instagram-two__image__link:hover {
+  color: var(--maru-black);
+}
+
+.services-two__item:hover .services-two__title {
+  color: var(--maru-black4);
+}
+
+.services-two__item:hover .services-two__tagline {
+  color: rgba(var(--maru-black4-rgb), 0.7);
+}
+
+.main-footer-two__title {
+  color: var(--maru-base);
+}
+
+.post-pagination a,
+.post-pagination a .post-pagination__icon {
+  color: var(--maru-text);
+}
+
+.sidebar__social__icon,
+.blog-details__carousel.owl-carousel .owl-nav button {
+  color: var(--maru-gray2);
+}
+
+.hero-one__title__text span {
+  text-shadow: 1px 1px 0 var(--maru-white), -1px -1px 0 var(--maru-white), 1px -1px 0 var(--maru-white), -1px 1px 0 var(--maru-white), 1px 1px 0 var(--maru-white);
+}
+
+.mobile-nav__content .main-menu__list li:not(:last-child) {
+  border-color: rgba(var(--maru-black-rgb), 0.1);
+}
+
+.main-header--one .main-header__btn:hover {
+  border-color: var(--maru-primary);
+}
+
+.hero-one .maru-btn:hover,
+.main-footer-two__scroll-top__btn {
+  border-color: var(--maru-black);
+}
+
+.main-header--one .main-header__btn,
+.hero-one__btn-1,
+.hero-one__title__text,
+.hero-one .maru-btn--border:hover,
+.main-footer-two__scroll-top__btn:hover {
+  border-color: var(--maru-base);
+}
+
+.contact-two .contact-btn {
+  border-color: rgba(var(--maru-black4-rgb), 0.1);
+}
+
+.contact-two .contact-btn:hover {
+  border-color: var(--maru-black4);
+}
+
+.contact-two .contact-btn:hover {
+  border-color: var(--maru-black4);
+}
+
+.follow-one__social__list a::before {
+  border-color: var(--maru-white);
+}
+
+.testimonials-one__bg__inner {
+  opacity: 0.01;
+}
+
+.hero-one__bg {
+  opacity: 0.02;
+}
+
+.hero-two__bg {
+  opacity: 0.3;
+}
+
+.testimonials-one--dark .testimonial-card {
+  box-shadow: none;
+}
+/*# sourceMappingURL=maru-dark.css.map */
