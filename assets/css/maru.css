@@ -447,46 +447,46 @@ h6 {
 
 .section-space {
   /*padding-top: var(--section-space, 150px);*/
-  padding-bottom: var(--section-space, 150px);
+  padding-bottom: var(--section-space, 50px);
 }
 @media (max-width: 767px) {
   .section-space {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 575px) {
   .section-space {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
 .section-space-top {
-  padding-top: var(--section-space, 150px);
+  padding-top: var(--section-space, 40px);
 }
 @media (max-width: 767px) {
   .section-space-top {
-    padding-top: 100px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 575px) {
   .section-space-top {
-    padding-top: 80px;
+    padding-top: 20px;
   }
 }
 
 .section-space-bottom {
-  padding-bottom: var(--section-space, 150px);
+  padding-bottom: var(--section-space, 80px);
 }
 @media (max-width: 767px) {
   .section-space-bottom {
-    padding-bottom: 100px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 575px) {
   .section-space-bottom {
-    padding-bottom: 80px;
+    padding-bottom: 20px;
   }
 }
 
