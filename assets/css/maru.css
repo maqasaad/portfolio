@@ -446,7 +446,7 @@ h6 {
 }
 
 .section-space {
-  padding-top: var(--section-space, 150px);
+  /*padding-top: var(--section-space, 150px);*/
   padding-bottom: var(--section-space, 150px);
 }
 @media (max-width: 767px) {
