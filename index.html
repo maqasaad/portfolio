@@ -528,11 +528,13 @@
 			</div><!-- /.col-lg-5 -->
 			<div class="col-lg-7 wow fadeInUp" data-wow-duration="1500ms">
 <div class="contact-page__form">
-  <form
-    action="https://formspree.io/f/maqngzye"
-    method="POST"
-    class="contact-page__form__form contact-contact-validated form-one"
-  >
+<form
+  id="contactForm"
+  action="https://formspree.io/f/maqngzye"
+  method="POST"
+  class="contact-page__form__form contact-contact-validated form-one"
+>
+
     <div class="form-one__group">
 
       <div class="form-one__control">
@@ -750,10 +752,89 @@
 <script src="assets/vendors/gsap/maru-split.js"></script>
 <!-- template js -->
 <script src="assets/js/maru.js"></script>
+<script src="assets/js/maru.js"></script>
+
+<!-- Formspree AJAX (prevent redirect) -->
+<script>
+  (function ($) {
+    "use strict";
+
+    const form = document.getElementById("contactForm");
+    const result = document.querySelector(".contact-page__form .result");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // يمنع التحويل لصفحة Formspree
+
+      const accept = document.getElementById("accept-policy");
+      if (accept && !accept.checked) {
+        if (result) {
+          result.innerHTML =
+            '<div class="alert alert-warning">Please accept the Terms and Privacy Policy.</div>';
+        }
+        return;
+      }
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const oldBtnHtml = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = "Sending...";
+
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+        .then(function (response) {
+          if (response.ok) {
+            form.reset();
+            if (result) {
+              result.innerHTML =
+                '<div class="alert alert-success">Thanks! Your message has been sent successfully.</div>';
+            }
+          } else {
+            return response.json().then(function (data) {
+              let errorMsg =
+                "Sorry, something went wrong. Please try again.";
+              if (data && data.errors) {
+                errorMsg = data.errors
+                  .map(function (error) {
+                    return error.message;
+                  })
+                  .join("<br>");
+              }
+              if (result) {
+                result.innerHTML =
+                  '<div class="alert alert-danger">' +
+                  errorMsg +
+                  "</div>";
+              }
+            });
+          }
+        })
+        .catch(function () {
+          if (result) {
+            result.innerHTML =
+              '<div class="alert alert-danger">Network error. Please try again.</div>';
+          }
+        })
+        .finally(function () {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = oldBtnHtml;
+        });
+    });
+  })(jQuery);
+</script>
+
 </body>
 
-
 </html>
+
 
 
 
