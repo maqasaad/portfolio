@@ -527,6 +527,7 @@
                 </div><!-- /.container -->
 			</div><!-- /.col-lg-5 -->
 			<div class="col-lg-7 wow fadeInUp" data-wow-duration="1500ms">
+				
 <div class="contact-page__form">
 <form
   id="contactForm"
@@ -570,7 +571,7 @@
         >
       </div>
 
-      <div class="form-one__control">
+      <!-- div class="form-one__control">
         <label for="country-phone-code-list">Phone Number</label>
         <input
           type="text"
@@ -578,7 +579,7 @@
           name="phone"
           placeholder="Phone Number"
         >
-      </div>
+	</div --!>
 
       <div class="form-one__control form-one__control--full" data-wow-delay="80ms">
         <label for="contact-message">Message</label>
@@ -754,24 +755,6 @@
 <script src="assets/js/maru.js"></script>
 <script src="assets/js/maru.js"></script>
 
-	<script>
-  (function () {
-    const input = document.getElementById("country-phone-code-list");
-    if (!input) return;
-
-    // إذا تم تهيئة intlTelInput سابقًا، لا تعيد تهيئته
-    if (input.dataset.itiInitialized === "1") return;
-    input.dataset.itiInitialized = "1";
-
-    // إذا القالب سبق وركّب أكثر من مرة (بسبب تهيئة مكررة)، احذف الزيادات
-    // أي wrapper إضافي (it keeps the first and removes duplicates)
-    const wrappers = input.parentElement.querySelectorAll(".iti");
-    if (wrappers.length > 1) {
-      for (let i = 1; i < wrappers.length; i++) wrappers[i].remove();
-    }
-  })();
-</script>
-
 <!-- Formspree AJAX (prevent redirect) -->
 <script>
   (function ($) {
@@ -852,6 +835,7 @@
 </body>
 
 </html>
+
 
 
 
